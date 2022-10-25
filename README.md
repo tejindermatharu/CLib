@@ -5,7 +5,7 @@ Please run the CacheTest project tests to Test and use the Custom cache.
 Some comments:
 
  - Have experimnented with a underlying Dictionary (with more syncronisation) in one implementation, but also with a ConcurrentDictioanry (less syncronisation) and performed some simple benchmarking. The one with Dictionary and more locking seemsed faster, but more testing and consistency checking would be needed with more time.
- - Have used another singleton using mediator pattern (with events) for creating a Notifier for expelled cache items. Have used this rather than using a simple callback, as a callback would be as short lived as the calling method. The mediator can be used anywhere in your app.
+ - Have used another singleton using mediator pattern (with events) for creating a Notifier for expelled cache items. Have used this rather than using a simple callback, as a callback would less flexible than a mediator that can be used anywhere in the calling app and used to notify all suscribers that are interested.
  
  With more time I would:
  
